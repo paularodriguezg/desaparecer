@@ -76,6 +76,22 @@ body {
   width: 100%;
 }
 
+#comics {
+  width: 30%;
+}
+
+#comics img {
+  width: 100%;
+}
+
+#cama {
+  width: 30%;
+}
+
+#cama img {
+  width: 100%;
+}
+
 footer {
   margin: auto;
   text-align: center;
