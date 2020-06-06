@@ -20,14 +20,14 @@ body {
 }
 
 #acerca {
-  width: 300px;
-  height: 150px;
+  width: 25vw;
+  height: 15vw;
   border-radius: 8px;
   border: solid #eea9ad 5px;
   background: #fbf1f0;
   padding: 0;
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 35%;
   display: grid;
   grid-template-rows: 24% 76%;
@@ -61,10 +61,19 @@ body {
   font-size: 1.5em;
   text-align: center;
   cursor: pointer;
+  padding: 1em;
 }
 
 #recuadro p:hover {
   color: red;
+}
+
+#historia {
+  width: 30%;
+}
+
+#historia img {
+  width: 100%;
 }
 
 footer {
