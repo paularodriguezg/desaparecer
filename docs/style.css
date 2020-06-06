@@ -1,5 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #general {
   max-width:1300;
   margin: auto;
   border: solid;
+  background: #eedaf9;
+}
+
+#titulo {
+  width: 45%;
+  margin: auto;
+}
+
+#titulo img {
+  width: 100%;
+}
+
+#acerca {
+  width: 30%;
+  font-family: 'Press Start 2P', cursive;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
 }
