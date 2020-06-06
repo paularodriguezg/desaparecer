@@ -20,8 +20,38 @@ body {
 }
 
 #acerca {
-  width: 30%;
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  border: solid #f4b4b2 5px;
+  background: #fbf1f0;
+  padding: 0;
+  margin: 0;
+}
+
+#top_acerca {
+  height: 15%;
+  box-sizing: border-box;
+  border-bottom: solid #f4b4b2 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#boton {
+  box-sizing: border-box;
+  height: 100%;
+  cursor: pointer;
+}
+
+#boton img {
+  height: 100%;
+}
+
+#recuadro {
   font-family: 'Press Start 2P', cursive;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 footer {
