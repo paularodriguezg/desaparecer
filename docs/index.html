@@ -6,7 +6,6 @@
   <title>Solo quiero desaparecer</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <script src="sketch.js"></script>
 </head>
 <body>
   <div id=general>
@@ -17,11 +16,9 @@
     </header>
     <section id="contenido">
       <div id="acerca">
-        <div id="top_acerca">
-          <div id="boton"><img src="boton.png" alt="botón"/></div>
-        </div>
+        <div id="top_acerca"><div id="boton" onclick="remove('#acerca')"></div></div>
         <div id=recuadro>
-          <button>¿Qué es esto?</button>
+          <div><p>¿Qué es esto?</p></div>
         </div>
       </div>
       <div id="comics"></div>
@@ -32,4 +29,8 @@
     <footer><p>Paula Rodríguez Gómez — 2020</p></footer>
   </div>
 </body>
+<script>
+  $ = (query) => document.querySelector(query);
+  remove = (query) => {$(query).remove()};
+</script>
 </html>
