@@ -5,37 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solo quiero desaparecer</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #general {
+      max-width:1300;
+      padding: 5vh;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #titulo {
+      width: 60%;
+      text-align: center;
+    } 
+
+    #titulo h1 {
+      color: black;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 3.5vw;
+    }
+
+    #imagen {
+      max-width: 150px;
+    }
+
+    #imagen img {
+      width: 100%;
+    }
+
+    #imagen img:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 500px) {
+      #titulo {
+        width: 90%;
+        text-align: center;
+      } 
+
+      #titulo h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 6vw;
+      }
+
+      #imagen {
+        max-width: 90px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id=general>
-    <header id="seccion_titulo">
-      <div id=titulo>
-        <img src="titulo.png" alt="título"/>
-      </div>
-    </header>
-    <section id="contenido">
-      <div id="acerca">
-        <div id="top_acerca"><div id="boton" onclick="remove('#acerca')"></div></div>
-        <div id=recuadro><div><p>¿Qué es esto?</p></div></div>
-      </div>
-      <div id="historia">
-        <a href=""><img src="personaje1.png" alt=""/></a>
-      </div>
-      <div id="comics">
-        <a href="comics"><img src="comics.png" alt=""/></a>
-      </div>
-      <div id="animacion"></div>
-      <div id="cama">
-        <a href="camas"><img src="cama.png" alt=""/></a>
-      </div>
-      <div id="enlaces"></div>
-    </section>
-    <footer><p>Paula Rodríguez Gómez — 2020</p></footer>
+  <div id="general">
+    <div id="titulo"><h1>Solo quiero desaparecer</h1></div>
+    <div id="imagen"><img id="imagen_a" src="click.png" alt=""/></div>
   </div>
 </body>
 <script>
   $ = (query) => document.querySelector(query);
   remove = (query) => {$(query).remove()};
+  $("#imagen_a").onclick = desaparecer;
+  function desaparecer() {
+    $("#imagen_a").setAttribute("src","puf.png");
+    setTimeout(()=>{
+      window.location.href = "indice/index.html";
+    },500);
+  }
 </script>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo quiero desaparecer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: white;
+    }
+
+    #general {
+      max-width:1300;
+      padding: 5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+
+    #titulo:hover {
+      cursor: default;
+    }
+
+    #menu a {
+      color: black;
+      text-decoration: none;
+    }
+
+    #menu a:hover {
+      color: #ff9d87;
+    }
+
+    #menu a:active {
+      color: black;
+    }
+
+    @media screen and (max-width: 500px) {
+      #general {
+        padding: 1vh;
+      }
+
+      #titulo {
+        width: 70%;
+        text-align: center;
+      }      
+
+      #menu {
+        width: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="general">
+    <div id="titulo">
+      <h1>Índice</h1>
+    </div>
+    <div id="menu">
+      <h2><a href="../acerca">Acerca</a></h2>
+      <h2><a href="../comics">Cómics</a></h2>
+      <h2><a href="../ilustraciones">Ilustraciones</a></h2>
+      <h2><a href="../ayuda">Líneas de ayuda</a></h2>
+      <h2><a href="../referencias">Referencias</a></h2>
+      <h2><a href="../agradecimientos">Agradecimientos</a></h2>
+    </div>
+  </div>
+</body>
+</html>

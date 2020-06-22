@@ -1,98 +1,99 @@
 body {
   margin: 0;
   padding: 0;
+  background: white;
+  padding: 5vh;
 }
 
-#general {
-  max-width:1300;
+.general {
   margin: auto;
-  border: solid;
-  background: #eedaf9;
+  max-width: 900px;
 }
 
-#titulo {
-  width: 45%;
-  margin: auto;
+.titulo {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  border: solid 1px red;
 }
 
-#titulo img {
+.columnas {
+  border: solid 1px blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.columna_txt {
+  border: solid 1px orange;
+}
+
+.columna_img {
+  text-align: center;
+  border: solid 1px green;
+}
+
+.columna_img img {
+  width: 150px;
+}
+
+.galeria {
+  border: solid 1px blue;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.galeria_img {
+  width: 100px;
+  text-align: center;
+}
+
+.galeria_img:hover {
+  box-sizing: border-box;
+  color: #ff9d87;
+  border: solid 1px #ff9d87;
+  border-radius: 5px;
+}
+
+.galeria_img a {
+  text-decoration: none;
+  color: black;
+}
+
+.galeria_img img {
   width: 100%;
 }
 
-#acerca {
-  width: 25vw;
-  height: 15vw;
-  border-radius: 8px;
-  border: solid #eea9ad 5px;
-  background: #fbf1f0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  display: grid;
-  grid-template-rows: 24% 76%;
-}
-
-#top_acerca {
-  border-bottom: solid #eea9ad 5px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-#boton {
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  background-image: url('boton.png');
-  background-size: 100%;
-  box-sizing: border-box;
-  border: solid #eea9ad 3px;
-  border-radius: 3px 0 0 3px;
-}
-
-#recuadro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#recuadro p {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.5em;
-  text-align: center;
-  cursor: pointer;
+.footer_menu {
   padding: 1em;
 }
 
-#recuadro p:hover {
-  color: red;
+.lectura {
+  padding: 1em;
 }
 
-#historia {
-  width: 30%;
-}
-
-#historia img {
+.lectura_img img {
   width: 100%;
 }
 
-#comics {
-  width: 30%;
+.textual {
+  padding: 1em;
 }
 
-#comics img {
-  width: 100%;
+.a_btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  color: black;
 }
 
-#cama {
-  width: 30%;
+.a_btn:hover {
+  color: #ff9d87;
+  cursor: pointer;
 }
 
-#cama img {
-  width: 100%;
-}
-
-footer {
-  margin: auto;
-  text-align: center;
+@media screen and (max-width: 500px) {
+  .titulo h1 {
+    font-size: 6vw;
+  }
 }
