@@ -92,6 +92,11 @@ body {
   cursor: pointer;
 }
 
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
 @media screen and (max-width: 500px) {
   .titulo h1 {
     font-size: 6vw;
