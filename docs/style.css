@@ -18,19 +18,13 @@ body {
 }
 
 .columnas {
-  border: solid 1px blue;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 }
 
-.columna_txt {
-  border: solid 1px orange;
-}
-
 .columna_img {
   text-align: center;
-  border: solid 1px green;
 }
 
 .columna_img img {
@@ -38,7 +32,6 @@ body {
 }
 
 .galeria {
-  border: solid 1px blue;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -53,7 +46,7 @@ body {
 .galeria_img:hover {
   box-sizing: border-box;
   color: #ff9d87;
-  border: solid 1px #ff9d87;
+  border: solid 2px #ff9d87;
   border-radius: 5px;
 }
 
@@ -101,5 +94,14 @@ footer {
 @media screen and (max-width: 500px) {
   .titulo h1 {
     font-size: 6vw;
+  }
+
+  .lectura {
+    padding: 5px;
+  }
+
+  .columnas {
+    display: flex;
+    flex-direction: column;
   }
 }
