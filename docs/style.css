@@ -13,7 +13,8 @@ body {
 .titulo {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
-  border: solid 1px red;
+  border: solid 3px #ff9d87;
+  border-radius: 5px;
 }
 
 .columnas {
