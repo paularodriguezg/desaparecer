@@ -1,8 +1,19 @@
+@import "https://fonts.googleapis.com/css2?family=Pangolin&display=swap";
+
 body {
   margin: 0;
   padding: 0;
   background: white;
   padding: 5vh;
+}
+
+p {
+  font-family: 'Pangolin', cursive;
+  font-size: 1.1em;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
 }
 
 .general {
@@ -18,9 +29,12 @@ body {
 }
 
 .columnas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.columna_txt {
+  padding: 0 1em;
 }
 
 .columna_img {
@@ -98,10 +112,5 @@ footer {
 
   .lectura {
     padding: 5px;
-  }
-
-  .columnas {
-    display: flex;
-    flex-direction: column;
   }
 }
