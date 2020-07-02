@@ -1,28 +1,34 @@
-@import "https://fonts.googleapis.com/css2?family=Pangolin&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap";
 
 body {
   margin: 0;
   padding: 0;
   background: white;
-  padding: 5vh;
+  padding: 4vh;
 }
 
 p {
-  font-family: 'Pangolin', cursive;
-  font-size: 1.1em;
+  /* font-family: 'Pangolin', cursive; */
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.7em;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 h2 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2em;
 }
 
 .general {
   margin: auto;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .titulo {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Patrick Hand', cursive;
   text-align: center;
   border: solid 3px #ff9d87;
   border-radius: 5px;
@@ -53,8 +59,9 @@ h2 {
 }
 
 .galeria_img {
-  width: 100px;
+  width: 250px;
   text-align: center;
+  padding: 0.5em;
 }
 
 .galeria_img:hover {
@@ -90,8 +97,8 @@ h2 {
 }
 
 .a_btn {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2em;
   color: black;
 }
 
@@ -102,15 +109,23 @@ h2 {
 
 footer {
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 500px) {
   .titulo h1 {
-    font-size: 6vw;
+    font-size: 9vw;
   }
 
   .lectura {
     padding: 5px;
+  }
+
+  .galeria_img {
+    width: 100px;
+  }
+
+  p {
+    font-size: 1.2em;
   }
 }
