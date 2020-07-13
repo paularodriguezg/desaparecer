@@ -8,7 +8,6 @@ body {
 }
 
 p {
-  /* font-family: 'Pangolin', cursive; */
   font-family: 'Patrick Hand', cursive;
   font-size: 1.7em;
 }
@@ -19,7 +18,7 @@ h1 {
 
 h2 {
   font-family: 'Patrick Hand', cursive;
-    color: #f2856d;
+  color: #f2856d;
   font-size: 2em;
 }
 
